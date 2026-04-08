@@ -1,0 +1,51 @@
+import java.util.Scanner;
+public class Data_operators{
+public static void main(String[] args) {
+int numA, numB, a,b,c,d;
+Scanner operation = new Scanner(System.in);
+System.out.println("Data Operators");
+System.out.println("Enter the number A:");
+numA=operation.nextInt();
+System.out.println("Enter the number B:");
+numB=operation.nextInt();
+System.out.println("Enter the number a:");
+a=operation.nextInt();
+System.out.println("Enter the number b:");
+b=operation.nextInt();
+System.out.println("Enter the number c:");
+c=operation.nextInt();
+System.out.println("Enter the number d:");
+d=operation.nextInt();
+System.out.println("---Arithmetic Operators---");
+System.out.println("Addition Operator :" + (numA+numB));
+System.out.println("Subtraction Operator:" + (numA-numB));
+System.out.println("Multiplication Operator:" + (numA*numB));
+System.out.println("division Operator:" + (numA/numB));
+System.out.println("Modulus Operator:" + (numA%numB));
+System.out.println("---Unary Operators---");
+int x=++a;
+System.out.println("Pre-increment of i:" + x);
+int y=b++;
+System.out.println("Post-increment of i:" + y);
+int z=--c;
+System.out.println("Pre-decrement of i:" + z);
+int w=d--;
+System.out.println("Post-decrement of i:" + w);
+System.out.println("---Relational Operators and Logical Operators---");
+System.out.println("AND Operator:");
+System.out.println((numA>numB)&&(numA<numB));
+System.out.println((numA>=numB)&&(numA<=numB));
+System.out.println((numA==numB)&&(numA!=numB));
+System.out.println("OR Operator:");
+System.out.println((numA>numB)||(numA<numB));
+System.out.println((numA>=numB)||(numA<=numB));
+System.out.println((numA==numB)||(numA!=numB));
+System.out.println("NOT Operator:");
+System.out.println(!((numA>numB)&&(numA<numB)));
+System.out.println(!((numA>=numB)&&(numA<=numB)));
+System.out.println(!((numA==numB)&&(numA!=numB)));
+System.out.println(!((numA>numB)||(numA<numB)));
+System.out.println(!((numA>=numB)||(numA<=numB)));
+System.out.println(!((numA==numB)||(numA!=numB)));
+}
+}
